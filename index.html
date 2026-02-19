@@ -3,71 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Krebs Group LLC</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28' font-family='serif' fill='%231a2744'>K</text></svg>">
+<title>The Krebs Group</title>
+<meta name="description" content="The Krebs Group — advisory and product firm navigating cyber risk, AI, and the shifting global threat landscape.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
-  * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
-    --navy: #1a2744;
-    --red: #8b2e2e;
-    --slate: #7c8a9c;
-    --light-slate: #b0bcc9;
-    --bg: #f8f7f4;
+    --navy: #1a2332;
+    --red: #8b2a2a;
+    --slate: #64748b;
+    --cream: #f8f6f1;
+    --rule: rgba(26,35,50,0.12);
   }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--navy);
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg);
-    color: var(--navy);
+    -webkit-font-smoothing: antialiased;
   }
-  .container {
-    text-align: center;
-    padding: 40px 24px;
-    max-width: 520px;
+
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 32px 60px;
   }
-  .the {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--slate);
-    margin-bottom: 2px;
+
+  @media (min-width: 768px) {
+    .page { padding: 120px 32px 80px; }
   }
-  .name {
-    font-size: 18px;
+
+  .mark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: var(--navy);
+    margin-bottom: 6px;
   }
-  .rule {
-    width: 36px;
-    height: 2px;
-    background: linear-gradient(to right, var(--navy), var(--red), var(--light-slate));
-    margin: 32px auto;
-    border-radius: 1px;
-  }
+
   .tagline {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 400;
-    color: rgba(26,39,68,0.65);
-    line-height: 1.6;
-    max-width: 420px;
-    margin: 0 auto;
+    font-style: italic;
+    color: var(--red);
+    margin-bottom: 10px;
+  }
+
+  .location {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--slate);
+    opacity: 0.6;
+    margin-bottom: 48px;
+  }
+
+  .rule {
+    width: 48px;
+    height: 2px;
+    background: var(--red);
+    margin-bottom: 40px;
+  }
+
+  .about {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--navy);
+    margin-bottom: 28px;
+    opacity: 0.85;
+  }
+
+  .focus-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 16px;
+    margin-top: 48px;
+  }
+
+  .focus-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+
+  .focus-pill {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border: 1px solid rgba(26,35,50,0.15);
+    border-radius: 100px;
+    color: var(--navy);
+    background: transparent;
+    opacity: 0.75;
+  }
+
+  .rule-light {
+    width: 100%;
+    height: 1px;
+    background: var(--rule);
+    margin-bottom: 32px;
+  }
+
+  .leader {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--slate);
+  }
+
+  .leader strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  .contact {
+    margin-top: 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+  }
+
+  .contact a {
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    opacity: 0.65;
+    transition: opacity 0.2s ease;
+  }
+
+  .contact a:hover {
+    opacity: 1;
+  }
+
+  .footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: var(--slate);
+    opacity: 0.6;
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <div class="the">The</div>
-    <div class="name">Krebs Group</div>
-    <div class="rule"></div>
+  <div class="page">
+    <div class="mark">The Krebs Group</div>
     <div class="tagline">Plain talk. Hard problems.</div>
-  </div>
-</body>
-</html>
+    <div class="location">Washington, DC</div>
+    <div class="rule"></div>
+
+    <p class="about">
+      The Krebs Group is an advisory and product firm helping organizations navigate cyber risk, artificial intelligence, and the shifting global threat landscape. We bring a practitioner's perspective to the questions that keep boards, governments, and technology leaders up at night.
+    </p>
+    <p class="about">
+      We also build products. Our venture work applies AI to consumer decision-making — turning complex choices into confident ones through intelligent software.
+    </p>
+
+    <div class="focus-label">Focus Areas</div>
+    <div class="focus-areas">
+      <span class="focus-pill">Cybersecurity</span>
+      <span class="focus-pill">AI &amp; Machine Learning</span>
+      <span class="focus-pill">Product Ventures</span>
+      <span class="focus-pill">Board Advisory</span>
+      <span class="focus-pill">Government &amp; Policy</span>
+      <span class="focus-pill">Strategic Threat Intelligence</span>
+    </div>
+
+    <div class="rule-light"></div>
+
+    <p class="leader">
+      <strong>Chris Krebs</strong> is the founder and principal of The Krebs Group. He previously served as the first Director of the Cybersecurity and Infrastructure Security Agency (CISA) at the U.S. Department of Homeland Security, where he led the federal government's efforts to secure critical infrastructure. He now advises organizations on cybersecurity, AI, and emerging technology risk.
+    </p>
+
+    <p class="contact">
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;info&#64;thekrebsgroup.com">info&#64;thekrebsgroup.com</a>
+    </p>
