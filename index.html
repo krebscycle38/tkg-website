@@ -37,6 +37,11 @@
   .sub, .about p, .proof { text-wrap: pretty; }
   .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
   .label { margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+  .latest b { color: var(--navy); font-weight: 600; }
+  .latest a { color: var(--muted); text-decoration: none; border-bottom: 1px solid rgba(26,35,50,.25); }
+  .latest a:hover { color: var(--red); border-color: var(--red); }
+  @media (max-width: 640px) { .latest .topic { display: none; } }
+  .latest .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--red); margin-right: 10px; vertical-align: 1px; }
   .serif { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
   h2.serif { margin: 0; font-size: clamp(40px, 4.4vw, 56px); line-height: 1.02; }
   .split { display: flex; flex-wrap: wrap; gap: 56px; }
@@ -162,7 +167,7 @@
 <main>
 <section id="top" class="hero">
   <div class="wrap">
-    <p class="label">Washington, DC</p>
+    <p class="label latest"><span class="dot" aria-hidden="true"></span><b>Latest</b> · <a href="https://www.cbsnews.com/video/cybersecurity-experts-break-down-recent-tech-outages-and-share-ways-you-can-protect-yourself/" target="_blank" rel="noopener">Face the Nation, CBS<span class="topic"> · Outages, AI and the race to patch</span>&nbsp;→</a></p>
     <div class="hero-row">
       <h1 class="serif">Plain talk.<br><em>Hard problems.</em></h1>
       <div class="stripes" aria-hidden="true">
