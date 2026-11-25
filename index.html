@@ -46,6 +46,7 @@
   .brand { text-decoration: none; display: flex; align-items: center; gap: 12px; }
   .brand b { font-size: 14px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; }
   .chev { display: flex; flex-direction: column; gap: 3px; }
+  .chev span { clip-path: polygon(0 0, 100% 0, calc(100% - 2px) 100%, 0 100%); }
   .chev span { display: block; height: 3px; transform-origin: left center; animation: grow .9s cubic-bezier(.2,.7,.2,1) both; }
   nav { display: flex; flex-wrap: wrap; gap: 6px 24px; font-size: 14px; }
   nav a { text-decoration: none; padding: 6px 0; }
@@ -56,6 +57,7 @@
   .hero-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; }
   .hero-row h1 { flex: 1 1 520px; }
   .stripes { flex: 0 1 440px; display: flex; flex-direction: column; gap: 9px; padding-right: 8px; }
+  .stripes span { clip-path: polygon(0 0, 100% 0, calc(100% - 13px) 100%, 0 100%); }
   .stripes span { display: block; height: 16px; transform-origin: left center; animation: grow 1.1s cubic-bezier(.2,.7,.2,1) both; transition: width .25s ease-out; }
   @media (max-width: 640px) { .stripes { display: none; } }
   .line { height: 2px; background: var(--navy); margin: 48px 0 40px; transform-origin: left; animation: grow 1.1s .3s cubic-bezier(.2,.7,.2,1) both; }
